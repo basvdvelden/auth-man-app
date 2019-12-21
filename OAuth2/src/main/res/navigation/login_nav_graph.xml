@@ -1,0 +1,12 @@
+<navigation android:id="@+id/login_nav_graph"
+    app:startDestination="@id/loginFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="nl.authentication.management.app.ui.login.LoginFragment"
+        android:label="activity_login"
+        tools:layout="@layout/fragment_login"/>
+</navigation>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">auth-man-app</string>
+    <string name="google_client_id">880901911080-cq3d9onpe72fcpinp6ehs4ghc7jc3gks.apps.googleusercontent.com</string>
+    <string name="login_success">Successfully logged in!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome %s !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_credentials_incorrect">"Your username or password was incorrect!"</string>
+</resources>
