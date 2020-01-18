@@ -12,8 +12,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 
 /**
- * ViewModel provider factory to instantiate LoginViewModel.
- * Required given LoginViewModel has a non-empty constructor
+ * ViewModel provider factory to instantiate AuthViewModel.
+ * Required given AuthViewModel has a non-empty constructor
  */
 @Singleton
 public class DaggerViewModelFactory implements ViewModelProvider.Factory {

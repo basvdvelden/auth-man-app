@@ -11,6 +11,7 @@ import javax.inject.Singleton;
 
 import io.reactivex.rxjava3.subjects.BehaviorSubject;
 import io.reactivex.rxjava3.subjects.Subject;
+import nl.authentication.management.app.LoginNotifier;
 import nl.authentication.management.app.api.AuthNotifier;
 import nl.authentication.management.app.api.Tokens;
 import nl.authentication.management.app.data.AuthCache;
@@ -31,15 +32,16 @@ public class LoginRepository {
     private final AuthCache authCache;
 
     private final AuthNotifier authNotifier;
-    private BehaviorSubject<Boolean> isLoggedIn = BehaviorSubject.create();
+    private final LoginNotifier loginNotifier;
 
     @Inject
     public LoginRepository(LoginDataSource dataSource, OAuthSharedPreferences sharedPrefs, AuthCache authCache,
-                    AuthNotifier authNotifier) {
+                           AuthNotifier authNotifier, LoginNotifier loginNotifier) {
         this.dataSource = dataSource;
         this.sharedPrefs = sharedPrefs;
         this.authCache = authCache;
         this.authNotifier = authNotifier;
+        this.loginNotifier = loginNotifier;
 
         this.authNotifier.getNeedToLogout().subscribe(needToLogout -> {
             if (needToLogout) {
@@ -50,7 +52,7 @@ public class LoginRepository {
                 }
                 Log.d(TAG, "logged out");
                 if (!alreadyPublished) {
-                    isLoggedIn.onNext(false);
+                    loginNotifier.setLoggedIn(false);
                 }
             }
         });
@@ -62,18 +64,14 @@ public class LoginRepository {
 
         if (getCurrentUser() == null) {
             Log.d(TAG, "logged out");
-            isLoggedIn.onNext(false);
+            loginNotifier.setLoggedIn(false);
         } else {
             Log.d(TAG, String.format("logged in, user=%s", getCurrentUser()));
-            isLoggedIn.onNext(true);
+            loginNotifier.setLoggedIn(true);
             this.authNotifier.setAuthInfo(getCurrentUser().getUserId(),
                     new Tokens(getAccessToken(), getExpiresAt(), getRefreshToken())
             );
         }
-    }
-
-    public Subject<Boolean> getIsLoggedIn() {
-        return this.isLoggedIn;
     }
 
     public LoggedInUser getCurrentUser() {
@@ -122,7 +120,7 @@ public class LoginRepository {
         UUID uuid = getCurrentUser().getUserId();
         authCache.setLoggedInUser(null);
         sharedPrefs.wipeUserLoginInfo();
-        isLoggedIn.onNext(false);
+        loginNotifier.setLoggedIn(false);
         dataSource.logout(uuid);
     }
 
@@ -149,7 +147,7 @@ public class LoginRepository {
                     new Tokens(user.getAccessToken(), user.getExpiresAt(), user.getRefreshToken()));
 
             // notify observers of login
-            this.isLoggedIn.onNext(true);
+            this.loginNotifier.setLoggedIn(true);
         }
     }
 
@@ -161,6 +159,7 @@ public class LoginRepository {
             String accessToken = sharedPrefs.getAccessToken();
             Long expiresAt = sharedPrefs.getExpiresAt();
             String refreshToken = sharedPrefs.getRefreshToken();
+            String username = sharedPrefs.getUsername();
 
             LoggedInUser user = new LoggedInUser();
             user.setUserId(userId);
@@ -169,6 +168,7 @@ public class LoginRepository {
             user.setAccessToken(accessToken);
             user.setExpiresAt(expiresAt);
             user.setRefreshToken(refreshToken);
+            user.setUsername(username);
 
             return user;
         } catch (NullPointerException e) {
@@ -185,6 +185,10 @@ public class LoginRepository {
         sharedPrefs.setDisplayName(user.getDisplayName());
         sharedPrefs.setActive(user.isActive());
         sharedPrefs.setUserId(user.getUserId());
+        sharedPrefs.setUsername(user.getUsername());
     }
 
+    public Result<Void> register(String username, String password) {
+        return dataSource.register(username, password);
+    }
 }

@@ -5,11 +5,18 @@
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="prompt_password1">Confirm password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome %s !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="invalid_email">Not a valid email address</string>
+    <string name="username_empty">Username is required</string>
+    <string name="password_empty">Password is required</string>
+    <string name="invalid_password">Password not strong enough</string>
+    <string name="passwords_dont_match">Please enter your password again</string>
     <string name="login_failed">"Login failed"</string>
     <string name="login_credentials_incorrect">"Your username or password was incorrect!"</string>
+    <string name="sign_up_button_text">Sign up</string>
+    <string name="registration_failed">Failed to create account, please try again later!</string>
+    <string name="registration_successful">Registration successful!</string>
 </resources>

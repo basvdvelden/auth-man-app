@@ -14,9 +14,9 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField ("String", "API_URL", appProperties['api.url'])
-        buildConfigField ("String", "KEYSTORE_PATH", appProperties['keystore-filename'])
-        buildConfigField ("String", "KEYSTORE_PASSWORD", appProperties['keystore-password'])
+        buildConfigField("String", "API_URL", appProperties['api.url'])
+        buildConfigField("String", "KEYSTORE_PATH", appProperties['keystore-filename'])
+        buildConfigField("String", "KEYSTORE_PASSWORD", appProperties['keystore-password'])
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -36,10 +36,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
 
-    def retrofit_version = "2.6.1"
-    def okhttp_version = "4.2.1"
+    implementation 'me.gosimple:nbvcxz:1.4.3'
+
+    def retrofit_version = '2.7.0'
+    def okhttp_version = '4.2.2'
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-scalars:$retrofit_version"
@@ -52,19 +54,20 @@ dependencies {
 
     implementation 'com.google.android.material:material'
 
-    implementation 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9.3'
+    implementation 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
 
-    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
     implementation 'io.reactivex.rxjava3:rxjava:3.0.0-RC6'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0-SNAPSHOT'
 
-    def dagger_version = "2.25.2"
+    def dagger_version = '2.25.3'
     implementation "com.google.dagger:dagger:$dagger_version"
     implementation "com.google.dagger:dagger-android:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
     annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
 
@@ -74,4 +77,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

@@ -35,6 +35,7 @@ import androidx.navigation.Navigation;
 import dagger.android.support.AndroidSupportInjection;
 import nl.authentication.management.app.R;
 import nl.authentication.management.app.di.DaggerViewModelFactory;
+import nl.authentication.management.app.ui.AuthViewModel;
 
 
 public class LoginFragment extends Fragment {
@@ -42,13 +43,14 @@ public class LoginFragment extends Fragment {
     private static final String TAG = "LoginFragment";
     private static final int GOOGLE_LOGIN_REQUEST_CODE = 101;
 
-    private LoginViewModel loginViewModel;
+    private AuthViewModel authViewModel;
     private ProgressBar loadingProgressBar;
     private EditText usernameEditText;
     private EditText passwordEditText;
     private NavController navController;
     private Button loginButton;
     private SignInButton googleLoginButton;
+    private Button signUpButton;
     private GoogleSignInClient googleSignInClient;
 
     @Inject
@@ -56,17 +58,16 @@ public class LoginFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_login, null);
-        return root;
+        return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         AndroidSupportInjection.inject(this);
-        super.onCreate(savedInstanceState);
+        super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-        loginViewModel = ViewModelProviders.of(requireActivity(), viewModelFactory)
-                .get(LoginViewModel.class);
+        authViewModel = ViewModelProviders.of(requireActivity(), viewModelFactory)
+                .get(AuthViewModel.class);
 
         String clientId = getString(R.string.google_client_id);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -81,6 +82,7 @@ public class LoginFragment extends Fragment {
 
         setLoginButton(view.findViewById(R.id.login));
         setGoogleLoginButton(view.findViewById(R.id.sign_in_button));
+        signUpButton = view.findViewById(R.id.sign_up_button);
 
         setGoogleSignInClient(GoogleSignIn.getClient(requireActivity(), gso));
 
@@ -108,7 +110,7 @@ public class LoginFragment extends Fragment {
                     // a listener.
                     Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
                     GoogleSignInAccount account = task.getResult(ApiException.class);
-                    loginViewModel.login(account);
+                    authViewModel.login(account);
                 } catch (ApiException e) {
                     // The ApiException status code indicates the detailed failure reason.
                     Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
@@ -126,13 +128,16 @@ public class LoginFragment extends Fragment {
     private void setListeners() {
         loginButton.setOnClickListener(v -> {
             loadingProgressBar.setVisibility(View.VISIBLE);
-            loginViewModel.login(usernameEditText.getText().toString(),
+            authViewModel.login(usernameEditText.getText().toString(),
                     passwordEditText.getText().toString());
         });
         googleLoginButton.setOnClickListener(v -> {
             loadingProgressBar.setVisibility(View.VISIBLE);
             Intent signInIntent = googleSignInClient.getSignInIntent();
             startActivityForResult(signInIntent, GOOGLE_LOGIN_REQUEST_CODE);
+        });
+        signUpButton.setOnClickListener(v -> {
+            navController.navigate(R.id.action_loginFragment_to_registerFragment);
         });
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -148,7 +153,7 @@ public class LoginFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
+                authViewModel.loginDataChanged(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
             }
         };
@@ -157,7 +162,7 @@ public class LoginFragment extends Fragment {
 
         passwordEditText.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                loginViewModel.login(usernameEditText.getText().toString(),
+                authViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
             }
             return false;
@@ -165,7 +170,7 @@ public class LoginFragment extends Fragment {
     }
 
     private void setObservers() {
-        loginViewModel.getLoginFormState().observe(this, loginFormState -> {
+        authViewModel.getLoginFormState().observe(this, loginFormState -> {
             if (loginFormState == null) {
                 return;
             }
@@ -178,7 +183,7 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        loginViewModel.getLoginResult().observe(this, loginResult -> {
+        authViewModel.getLoginResult().observe(this, loginResult -> {
             loadingProgressBar.setVisibility(View.GONE);
             if (loginResult == null) {
                 return;
@@ -189,11 +194,8 @@ public class LoginFragment extends Fragment {
             }
             if (loginResult.getSuccess() != null) {
                 showToastMessage(R.string.login_success);
-                // TODO: look into why this is necessary
-                navController.popBackStack(R.id.loginFragment, false);
-//                navController.navigate(R.id.action_global_mainFragment);
             }
-            loginViewModel.setStateToFillingForm();
+            authViewModel.resetLoginResult();
         });
     }
 

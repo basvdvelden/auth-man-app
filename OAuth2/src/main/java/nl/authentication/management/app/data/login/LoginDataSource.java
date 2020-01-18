@@ -9,7 +9,7 @@ import java.util.UUID;
 
 import javax.inject.Inject;
 
-import nl.authentication.management.app.api.oauth2.AuthApi;
+import nl.authentication.management.app.api.AuthApi;
 import nl.authentication.management.app.data.Result;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -63,16 +63,28 @@ public class LoginDataSource {
         }
     }
 
-    // TODO: server error handling should be global
-    private void handleAuthResponse(Response<LoggedInUser> response) {
-        Log.d(TAG, String.format("response code from authenticating: %d", response.code()));
+    private void handleAuthResponse(Response<LoggedInUser> response) throws Exception {
         switch (response.code()) {
             case 202:
                 return;
             case 403:
                 throw new LoginCredentialsInvalidException("Username or password was incorrect");
-            case 500:
-                Log.e(TAG, String.format("server error: %s", response.message()));
+            default:
+                throw new Exception(response.errorBody().string());
+        }
+    }
+
+    public Result<Void> register(String username, String password) {
+        try {
+            Call<Void> call = authApi.register(username, password);
+            Response<Void> response = call.clone().execute();
+            if (response.isSuccessful()) {
+                return new Result.Success<>(null);
+            }
+            return new Result.Error(new Exception(response.errorBody().string()));
+        } catch (IOException e) {
+            Log.e(TAG, "registration error: ", e);
+            return new Result.Error(new RegistrationFailedException("Error registering.", e));
         }
     }
 }

@@ -13,6 +13,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import androidx.annotation.NonNull;
+import nl.authentication.management.app.BuildConfig;
 import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.Request;
@@ -22,19 +23,16 @@ import okhttp3.Response;
 @Singleton
 public class AuthorizationInterceptor implements Interceptor {
     private static final String TAG = "AuthInterceptor";
-    // TODO: put in string resource file
-    private static final String REFRESH_TOKEN_URL = "https://192.168.178.99:8443/oauth2/users/%s/token/refresh";
+    private static final String REFRESH_TOKEN_URL = BuildConfig.API_URL.concat("users/%s/token/refresh");
     private static final String AUTHORIZATION_HEADER = "Authorization";
     private static final String AUTH_HEADER_SCHEME = "Bearer ";
 
     private final AuthNotifier authNotifier;
 
     private static final class NoAuthUrls {
-        private static final String BASE = "https://192.168.178.99:8443/oauth2";
-        private static final String LOGIN_NATIVE = BASE.concat("/users/authenticate/native");
-        private static final String LOGIN_GOOGLE = BASE.concat("/users/authenticate/google");
-        // TODO: http method is not taken into account here!!
-        private static final String REGISTER = BASE.concat("/users");
+        private static final String LOGIN_NATIVE = BuildConfig.API_URL.concat("users/authenticate/native");
+        private static final String LOGIN_GOOGLE = BuildConfig.API_URL.concat("users/authenticate/google");
+        private static final String REGISTER = BuildConfig.API_URL.concat("users/register");
     }
     private final List<String> noAuthUrls = Arrays.asList(
             NoAuthUrls.LOGIN_GOOGLE,
@@ -87,6 +85,7 @@ public class AuthorizationInterceptor implements Interceptor {
                                         "user=%s giving up...", request.url(), authInfo.getUserId()));
                         // notify login repository to logout
                         authNotifier.notifyToLogout();
+                        response.close();
                         return chain.proceed(requestBuilder.build());
                     }
                 }
@@ -140,6 +139,6 @@ public class AuthorizationInterceptor implements Interceptor {
     }
 
     private boolean needsToken(String url) {
-        return !noAuthUrls.contains(url);
+        return !noAuthUrls.contains(url) && url.startsWith("https://192.168.178.13:844");
     }
 }

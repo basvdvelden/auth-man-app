@@ -16,6 +16,7 @@ public class LoggedInUser {
     private String refreshToken;
     private String displayName;
     private Boolean active;
+    private String username;
 
     public LoggedInUser() {}
 
@@ -63,8 +64,8 @@ public class LoggedInUser {
     @NonNull
     public String toString() {
         return String.format(Locale.forLanguageTag("nl_NL"),
-                "userId=%s, displayName=%s, active=%s, expiresAt=%d, refreshToken=%s, accessToken=%s",
-                userId, displayName, active, expiresAt, refreshToken, accessToken);
+                "username=%s, userId=%s, displayName=%s, active=%s, expiresAt=%d, refreshToken=%s, accessToken=%s",
+                username, userId, displayName, active, expiresAt, refreshToken, accessToken);
     }
 
     public Long getExpiresAt() {
@@ -73,5 +74,13 @@ public class LoggedInUser {
 
     public void setExpiresAt(Long expiresAt) {
         this.expiresAt = expiresAt;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

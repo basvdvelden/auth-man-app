@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider;
 import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
-import nl.authentication.management.app.ui.login.LoginViewModel;
+import nl.authentication.management.app.ui.AuthViewModel;
 
 @Module
 public abstract class ViewModelModule {
@@ -15,6 +15,6 @@ public abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(LoginViewModel.class)
-    public abstract ViewModel bindLoginViewModel(LoginViewModel loginViewModel);
+    @ViewModelKey(AuthViewModel.class)
+    public abstract ViewModel bindLoginViewModel(AuthViewModel authViewModel);
 }

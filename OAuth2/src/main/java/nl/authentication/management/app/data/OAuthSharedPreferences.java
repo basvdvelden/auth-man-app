@@ -22,6 +22,7 @@ public class OAuthSharedPreferences {
         private static final String DISPLAY_NAME = "displayName";
         private static final String USER_ID = "userId";
         private static final String ACTIVE = "active";
+        private static final String USERNAME = "username";
     }
 
     @Inject
@@ -51,6 +52,10 @@ public class OAuthSharedPreferences {
 
     public void setExpiresAt(@NonNull Long expiresAt) {
         sharedPrefs.edit().putLong(Keys.EXPIRES_AT, expiresAt).apply();
+    }
+
+    public void setUsername(@NonNull String username) {
+        sharedPrefs.edit().putString(Keys.USERNAME, username).apply();
     }
 
     @NonNull
@@ -89,15 +94,14 @@ public class OAuthSharedPreferences {
         throw new NullPointerException("expiresAt is null");
     }
 
+    @NonNull
+    public String getUsername() {
+        return sharedPrefs.getString(Keys.USERNAME, null);
+    }
+
     public void wipeUserLoginInfo() {
-        // TODO: maybe do clear() here
         sharedPrefs.edit()
-                .remove(Keys.ACTIVE)
-                .remove(Keys.DISPLAY_NAME)
-                .remove(Keys.USER_ID)
-                .remove(Keys.REFRESH_TOKEN)
-                .remove(Keys.ACCESS_TOKEN)
-                .remove(Keys.EXPIRES_AT)
+                .clear()
                 .apply();
     }
 

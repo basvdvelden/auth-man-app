@@ -5,7 +5,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import nl.authentication.management.app.api.AuthNotifier;
-import nl.authentication.management.app.api.oauth2.AuthApi;
+import nl.authentication.management.app.api.AuthApi;
 import nl.authentication.management.app.data.AuthCache;
 import nl.authentication.management.app.data.OAuthSharedPreferences;
 import nl.authentication.management.app.data.login.LoginDataSource;
@@ -29,13 +29,5 @@ public class LoginModule {
     @Singleton
     AuthNotifier provideAuthNotifier() {
         return new AuthNotifier();
-    }
-
-    @Provides
-    @Singleton
-    public LoginRepository provideLoginRepository(LoginDataSource dataSource,
-                                                  OAuthSharedPreferences sharedPrefs,
-                                                  AuthCache cache, AuthNotifier notifier) {
-        return new LoginRepository(dataSource, sharedPrefs, cache, notifier);
     }
 }

@@ -1,4 +1,4 @@
-package nl.authentication.management.app.api.oauth2;
+package nl.authentication.management.app.api;
 
 import java.util.UUID;
 
@@ -14,8 +14,12 @@ import retrofit2.http.Path;
 @Singleton
 public interface AuthApi {
 
-    @POST("users")
-    void register();
+    @FormUrlEncoded
+    @POST("users/register")
+    Call<Void> register(
+            @Field("username") String username,
+            @Field("password") String password
+    );
 
     @FormUrlEncoded
     @POST("users/authenticate/native")

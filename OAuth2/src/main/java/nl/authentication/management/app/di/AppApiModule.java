@@ -17,7 +17,7 @@ import dagger.Provides;
 import nl.authentication.management.app.BuildConfig;
 import nl.authentication.management.app.api.AuthNotifier;
 import nl.authentication.management.app.api.AuthorizationInterceptor;
-import nl.authentication.management.app.api.oauth2.AuthApi;
+import nl.authentication.management.app.api.AuthApi;
 import nl.authentication.management.app.ssl.SSLTrustManagerHelper;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -69,16 +69,16 @@ public class AppApiModule {
             e.printStackTrace();
         }
         final SSLSocketFactory sslSocketFactory = context.getSocketFactory();
-
+        Log.w(TAG, context.getSocketFactory().toString());
         OkHttpClient okHttpClient = new OkHttpClient();
-        //TODO: .sslSocketFactory is deprecated! Pass trustmanager as 2nd argument.
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.level(HttpLoggingInterceptor.Level.BODY);
         return okHttpClient.newBuilder()
                 .addInterceptor(new HttpLoggingInterceptor())
                 .addInterceptor(authorizationInterceptor)
                 // TODO: Create hostname verifier.
-                .sslSocketFactory(sslSocketFactory).hostnameVerifier((hostname, sslSession) -> true)
+                .sslSocketFactory(sslSocketFactory, sslTrustManagerHelper.getTrustManager())
+                .hostnameVerifier((hostname, sslSession) -> true)
                 .build();
     }
 

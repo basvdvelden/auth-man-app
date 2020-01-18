@@ -17,14 +17,17 @@ import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
 
 
 public class SSLTrustManagerHelper {
+    private static final String TAG = "SSLTrustMgrHelper";
 
     private InputStream keyStore;
     private String keyStorePassword;
     private InputStream trustStore;
     private String trustStorePassword;
+    private X509TrustManager tm;
 
     public SSLTrustManagerHelper(InputStream keyStore,
                                  String keyStorePassword,
@@ -44,6 +47,7 @@ public class SSLTrustManagerHelper {
         try {
             TrustManagerFactory trustManagerFactory = getTrustManagerFactory(trustStore, trustStorePassword);
             KeyManagerFactory keyManagerFactory = getKeyManagerFactory(keyStore, keyStorePassword);
+            tm = (X509TrustManager) trustManagerFactory.getTrustManagers()[0];
 
             return getSSLContext(keyManagerFactory.getKeyManagers(), trustManagerFactory.getTrustManagers());
         } catch (UnrecoverableKeyException | NoSuchAlgorithmException | CertificateException | KeyStoreException | IOException | KeyManagementException e) {
@@ -57,6 +61,10 @@ public class SSLTrustManagerHelper {
                 e.printStackTrace();
             }
         }
+    }
+
+    public X509TrustManager getTrustManager() {
+        return tm;
     }
 
     private static SSLContext getSSLContext(KeyManager[] keyManagers, TrustManager[] trustManagers) throws NoSuchAlgorithmException, KeyManagementException {
