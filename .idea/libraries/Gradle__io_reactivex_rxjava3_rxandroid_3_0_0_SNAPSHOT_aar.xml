@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: io.reactivex.rxjava3:rxandroid:3.0.0-SNAPSHOT@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f42bfd11aee419d909a7ef3fbe85291/rxandroid-3.0.0-SNAPSHOT/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f42bfd11aee419d909a7ef3fbe85291/rxandroid-3.0.0-SNAPSHOT/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9f7dd73e5d6ab3ab64117e1dfe2b199/rxandroid-3.0.0-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9f7dd73e5d6ab3ab64117e1dfe2b199/rxandroid-3.0.0-SNAPSHOT/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxandroid/3.0.0-SNAPSHOT/980f62cee64dc5fc9553172c627cb44c32e580a0/rxandroid-3.0.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxandroid/3.0.0-SNAPSHOT/980f62cee64dc5fc9553172c627cb44c32e580a0/rxandroid-3.0.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxandroid/3.0.0-SNAPSHOT/7bb332b2cc8aedff8570ddab1245b38de7eb0a59/rxandroid-3.0.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

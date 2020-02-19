@@ -10,100 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fef61b-ff5b-4d6a-9f11-233ea767ffa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_10_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_10_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_10_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_2_0_alpha03_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_25_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_android_2_25_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_android_support_2_25_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_2_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_2_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava3_rxjava_3_0_0_RC7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_gosimple_nbvcxz_1_4_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_core_2_0_0_M3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_rest_template_2_0_0_M3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/RegistrationFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/register/RegisterFormState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/register/RegisterFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkNotifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_rc01_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_9_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_9_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_2_0_alpha02_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_25_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_android_2_25_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_android_support_2_25_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_2_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_2_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_6_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_6_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_6_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava3_rxandroid_3_0_0_SNAPSHOT_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava3_rxandroid_3_0_0_SNAPSHOT_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava3_rxjava_3_0_0_RC6_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_core_1_0_1_RELEASE_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_rest_template_1_0_1_RELEASE_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/OAuth2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/OAuth2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/AuthorizationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/AuthorizationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/oauth2/AuthApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/AuthApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/OAuthSharedPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/OAuthSharedPreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoggedInUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoggedInUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/ActivityModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/ActivityModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/DaggerViewModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/DaggerViewModelFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/LoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/LoginModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/ViewModelModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/ViewModelModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ssl/SSLTrustManagerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ssl/SSLTrustManagerHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/login/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/login/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/login/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/AuthViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/res/navigation/login_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/res/navigation/login_nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/res/raw/keystore.bks" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/res/raw/keystore.bks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth2/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth2/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,49 +48,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/AuthorizationInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="141" selection-start-line="141" selection-end-line="141" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="901">
+              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/OAuthSharedPreferences.java">
+        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/LoginModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ssl/SSLTrustManagerHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="e#2477#2478#0" expanded="true" />
-                <element signature="e#2502#2503#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,8 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,52 +92,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/AuthViewModel.java">
+        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6236#6237#0" expanded="true" />
-                <element signature="e#6291#6292#0" expanded="true" />
-                <element signature="e#6469#6470#0" expanded="true" />
-                <element signature="e#6527#6528#0" expanded="true" />
-                <element signature="e#6568#6569#0" expanded="true" />
-                <element signature="e#6629#6630#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1020">
+              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
+        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppComponent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginDataSource.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.0.0-RC7/25cff4206f44d246b4a27ea4b162eb8b76aec1da/rxjava-3.0.0-RC7-sources.jar!/io/reactivex/rxjava3/subjects/BehaviorSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="83" column="82" selection-start-line="83" selection-start-column="82" selection-end-line="83" selection-end-column="82" />
+            <state relative-caret-position="6562">
+              <caret line="412" column="9" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.0.0-RC7/25cff4206f44d246b4a27ea4b162eb8b76aec1da/rxjava-3.0.0-RC7-sources.jar!/io/reactivex/rxjava3/internal/util/NotificationLite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+              <folding>
+                <element signature="e#2895#2896#0" expanded="true" />
+                <element signature="e#2923#2924#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -277,13 +190,15 @@
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/AuthorizationInterceptor.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginDataSource.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/OAuthSharedPreferences.java" />
-        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ssl/SSLTrustManagerHelper.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java" />
-        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/AuthViewModel.java" />
         <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginRepository.java" />
+        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/LoginModule.java" />
+        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java" />
+        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java" />
+        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java" />
+        <option value="$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkNotifier.java" />
       </list>
     </option>
   </component>
@@ -299,7 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -335,7 +250,37 @@
               <item name="OAuth2" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auth-man-app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="OAuth2" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auth-man-app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="OAuth2" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="di" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auth-man-app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="OAuth2" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auth-man-app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="OAuth2" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="auth-man-app" type="1abcf292:AndroidViewProjectNode" />
@@ -356,14 +301,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fine-man-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -422,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576936558650</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added login notifier">
+      <created>1579348827673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579348827673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -447,14 +399,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32969603" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="TODO" order="2" visible="true" weight="0.32955405" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32955405" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32955405" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32955405" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32969603" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.32955405" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.32955405" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32969603" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32955405" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.11564626" />
@@ -468,7 +420,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="added login notifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login notifier" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -522,23 +475,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/res/navigation/login_nav_graph.xml">
-      <provider selected="true" editor-type-id="nav-designer" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="e#3787#3811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="nav-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/ActivityModule.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -548,12 +490,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_register.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -653,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ssl/SSLTrustManagerHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -672,41 +607,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/ui/AuthViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6236#6237#0" expanded="true" />
@@ -719,10 +630,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/res/layout/fragment_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/data/login/LoginRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="901">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/LoginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkConnectivityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/LoginNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppApiModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/di/AppComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.0.0-RC7/25cff4206f44d246b4a27ea4b162eb8b76aec1da/rxjava-3.0.0-RC7-sources.jar!/io/reactivex/rxjava3/subjects/BehaviorSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6562">
+          <caret line="412" column="9" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.0.0-RC7/25cff4206f44d246b4a27ea4b162eb8b76aec1da/rxjava-3.0.0-RC7-sources.jar!/io/reactivex/rxjava3/internal/util/NotificationLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+          <folding>
+            <element signature="e#2895#2896#0" expanded="true" />
+            <element signature="e#2923#2924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OAuth2/src/main/java/nl/authentication/management/app/api/NetworkNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

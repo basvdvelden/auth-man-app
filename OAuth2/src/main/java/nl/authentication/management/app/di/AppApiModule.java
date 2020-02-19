@@ -1,5 +1,6 @@
 package nl.authentication.management.app.di;
 
+import android.os.Build;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -18,6 +19,7 @@ import nl.authentication.management.app.BuildConfig;
 import nl.authentication.management.app.api.AuthNotifier;
 import nl.authentication.management.app.api.AuthorizationInterceptor;
 import nl.authentication.management.app.api.AuthApi;
+import nl.authentication.management.app.api.NetworkConnectivityInterceptor;
 import nl.authentication.management.app.ssl.SSLTrustManagerHelper;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -61,7 +63,8 @@ public class AppApiModule {
     @Provides
     @Singleton
     public OkHttpClient provideOkHttpClient(SSLTrustManagerHelper sslTrustManagerHelper,
-                                            AuthorizationInterceptor authorizationInterceptor) {
+                                            AuthorizationInterceptor authorizationInterceptor,
+                                            NetworkConnectivityInterceptor ncInterceptor) {
         SSLContext context = null;
         try {
             context = sslTrustManagerHelper.clientSSLContext();
@@ -73,13 +76,16 @@ public class AppApiModule {
         OkHttpClient okHttpClient = new OkHttpClient();
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.level(HttpLoggingInterceptor.Level.BODY);
-        return okHttpClient.newBuilder()
+        OkHttpClient.Builder builder = okHttpClient.newBuilder()
                 .addInterceptor(new HttpLoggingInterceptor())
                 .addInterceptor(authorizationInterceptor)
                 // TODO: Create hostname verifier.
                 .sslSocketFactory(sslSocketFactory, sslTrustManagerHelper.getTrustManager())
-                .hostnameVerifier((hostname, sslSession) -> true)
-                .build();
+                .hostnameVerifier((hostname, sslSession) -> true);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+                builder.addInterceptor(ncInterceptor).build();
+        }
+        return builder.build();
     }
 
     @Provides

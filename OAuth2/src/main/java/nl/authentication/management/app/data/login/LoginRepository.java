@@ -52,7 +52,7 @@ public class LoginRepository {
                 }
                 Log.d(TAG, "logged out");
                 if (!alreadyPublished) {
-                    loginNotifier.setLoggedIn(false);
+                    loginNotifier.setLoggedIn(null);
                 }
             }
         });
@@ -64,10 +64,10 @@ public class LoginRepository {
 
         if (getCurrentUser() == null) {
             Log.d(TAG, "logged out");
-            loginNotifier.setLoggedIn(false);
+            loginNotifier.setLoggedIn(null);
         } else {
             Log.d(TAG, String.format("logged in, user=%s", getCurrentUser()));
-            loginNotifier.setLoggedIn(true);
+            loginNotifier.setLoggedIn(getCurrentUser());
             this.authNotifier.setAuthInfo(getCurrentUser().getUserId(),
                     new Tokens(getAccessToken(), getExpiresAt(), getRefreshToken())
             );
@@ -120,7 +120,7 @@ public class LoginRepository {
         UUID uuid = getCurrentUser().getUserId();
         authCache.setLoggedInUser(null);
         sharedPrefs.wipeUserLoginInfo();
-        loginNotifier.setLoggedIn(false);
+        loginNotifier.setLoggedIn(null);
         dataSource.logout(uuid);
     }
 
@@ -147,7 +147,7 @@ public class LoginRepository {
                     new Tokens(user.getAccessToken(), user.getExpiresAt(), user.getRefreshToken()));
 
             // notify observers of login
-            this.loginNotifier.setLoggedIn(true);
+            this.loginNotifier.setLoggedIn(user);
         }
     }
 
